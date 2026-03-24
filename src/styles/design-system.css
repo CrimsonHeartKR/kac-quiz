@@ -1,0 +1,194 @@
+/* ══════════════════════════════════════════════════════════
+   KAC Quiz — Design System Utilities
+   Glassmorphism, gradients, micro-interactions, typography
+   ══════════════════════════════════════════════════════════ */
+
+/* ── Glassmorphism Cards ── */
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+}
+
+.glass-card-strong {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+}
+
+.glass-card-light {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+}
+
+/* ── Gradient Utilities ── */
+
+.gradient-primary {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+}
+
+.gradient-bg {
+  background: radial-gradient(ellipse at 30% 20%, rgba(26, 58, 107, 0.4) 0%, transparent 50%),
+              radial-gradient(ellipse at 70% 80%, rgba(232, 160, 32, 0.15) 0%, transparent 50%),
+              var(--bg);
+}
+
+.gradient-btn-a {
+  background: linear-gradient(135deg, var(--btn-a) 0%, #DC2626 100%);
+}
+
+.gradient-btn-b {
+  background: linear-gradient(135deg, var(--btn-b) 0%, #2563EB 100%);
+}
+
+.gradient-btn-c {
+  background: linear-gradient(135deg, var(--btn-c) 0%, #D97706 100%);
+}
+
+.gradient-btn-d {
+  background: linear-gradient(135deg, var(--btn-d) 0%, #059669 100%);
+}
+
+/* ── Button Micro-Interactions ── */
+
+.btn-hover {
+  transition: all 0.2s ease;
+}
+.btn-hover:hover {
+  filter: brightness(1.1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-1px);
+}
+
+.btn-press {
+  transition: all 0.15s ease;
+}
+.btn-press:active {
+  transform: scale(0.96);
+  filter: brightness(0.9);
+}
+
+.btn-glow {
+  transition: box-shadow 0.3s ease;
+}
+.btn-glow:hover {
+  box-shadow: 0 0 20px rgba(232, 160, 32, 0.4), 0 0 40px rgba(232, 160, 32, 0.1);
+}
+
+.btn-glow-red:hover {
+  box-shadow: 0 0 20px rgba(220, 38, 38, 0.4), 0 0 40px rgba(220, 38, 38, 0.15);
+}
+
+.btn-glow-green:hover {
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.4), 0 0 40px rgba(16, 185, 129, 0.15);
+}
+
+.btn-pulse-ready {
+  animation: pulseGlow 2s ease-in-out infinite;
+}
+
+/* ── Text Effects ── */
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-glow {
+  text-shadow: 0 0 10px rgba(232, 160, 32, 0.5), 0 0 20px rgba(232, 160, 32, 0.2);
+}
+
+.text-glow-white {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+/* ── Display Typography ── */
+
+.text-display {
+  font-family: var(--font-title, 'Bebas Neue'), system-ui, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1;
+}
+
+.text-display-lg {
+  font-family: var(--font-title, 'Bebas Neue'), system-ui, sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  line-height: 0.9;
+}
+
+/* ── Card Hover ── */
+
+.card-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+/* ── Shimmer Border ── */
+
+.shimmer-border {
+  position: relative;
+  overflow: hidden;
+}
+.shimmer-border::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.3), rgba(255,255,255,0.05), rgba(255,255,255,0.3));
+  background-size: 200% 200%;
+  animation: shimmer 3s linear infinite;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: xor;
+}
+
+/* ── Focus Ring ── */
+
+.focus-ring {
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.focus-ring:focus-within {
+  box-shadow: 0 0 0 3px rgba(26, 58, 107, 0.3);
+  border-color: var(--primary);
+}
+
+/* ── Backdrop Overlay ── */
+
+.backdrop-dark {
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* ── Score Badge ── */
+
+.badge-glow {
+  box-shadow: 0 0 8px rgba(232, 160, 32, 0.4);
+  border: 1px solid rgba(232, 160, 32, 0.3);
+}
+
+/* ── Progress Bar Gradient ── */
+
+.progress-gradient {
+  background: linear-gradient(90deg, var(--primary) 0%, var(--accent) 50%, var(--primary) 100%);
+  background-size: 200% 100%;
+  animation: shimmer 2s linear infinite;
+}

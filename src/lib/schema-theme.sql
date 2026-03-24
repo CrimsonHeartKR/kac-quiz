@@ -1,0 +1,49 @@
+-- ═══════════════════════════════════════════════════════════
+-- 테마 시스템 스키마 (quiz_sets.theme_config JSONB 활용)
+-- ═══════════════════════════════════════════════════════════
+--
+-- theme_config JSONB 컬럼은 이미 존재합니다.
+-- 모든 테마 설정은 이 JSONB에 저장됩니다.
+--
+-- 저장 구조 예시:
+-- {
+--   "name": "항공 테마",
+--   "primaryColor": "#1E40AF",
+--   "accentColor": "#F5C842",
+--   "bgColor": "#0A1628",
+--   "bgSecondary": "#111D35",
+--   "btnA": "#DC2626",
+--   "btnB": "#1D4ED8",
+--   "btnC": "#D97706",
+--   "btnD": "#059669",
+--   "timerSafe": "#059669",
+--   "timerWarn": "#D97706",
+--   "timerDanger": "#DC2626",
+--   "correct": "#059669",
+--   "incorrect": "#DC2626",
+--   "medalGold": "#F5C842",
+--   "medalSilver": "#94A3B8",
+--   "medalBronze": "#B45309",
+--   "overlayColor": "rgba(10,22,40,0.70)",
+--   "cardBg": "rgba(30,64,175,0.08)",
+--   "cardBorder": "rgba(30,64,175,0.20)",
+--   "bgImageJoin": "https://...",
+--   "bgImageWait": "https://...",
+--   "bgImagePlay": "https://...",
+--   "bgImageResult": "https://...",
+--   "bgImageProjector": "https://...",
+--   "lottieTimer": "https://...",
+--   "lottieCorrect": "https://...",
+--   "lottieIncorrect": "https://...",
+--   "lottieCelebration": "https://...",
+--   "buttonPreset": "default",
+--   "logoUrl": "https://...",
+--   "eventName": "KAC 항공교육"
+-- }
+--
+-- 별도 테이블이나 ALTER TABLE은 불필요합니다.
+-- theme_config JSONB가 모든 테마 데이터를 유연하게 저장합니다.
+--
+-- 기존 join_bg_image 컬럼과의 호환:
+-- join_bg_image는 기존 호환용으로 유지하되,
+-- theme_config.bgImageJoin이 있으면 우선 적용됩니다.

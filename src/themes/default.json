@@ -1,0 +1,44 @@
+{
+  "name": "KAC 기본 테마",
+  "primaryColor": "#1A3A6B",
+  "accentColor": "#E8A020",
+  "bgColor": "#090D1A",
+  "bgSecondary": "#0F1629",
+  "logoUrl": "",
+  "eventName": "KAC 교육사업",
+  "fontTitle": "Bebas Neue",
+  "fontBody": "Pretendard",
+
+  "btnA": "#EF4444",
+  "btnB": "#3B82F6",
+  "btnC": "#F59E0B",
+  "btnD": "#10B981",
+
+  "timerSafe": "#10B981",
+  "timerWarn": "#F59E0B",
+  "timerDanger": "#EF4444",
+
+  "correct": "#10B981",
+  "incorrect": "#EF4444",
+
+  "medalGold": "#FFD700",
+  "medalSilver": "#C0C0C0",
+  "medalBronze": "#CD7F32",
+
+  "overlayColor": "rgba(0,0,0,0.65)",
+  "cardBg": "rgba(255,255,255,0.05)",
+  "cardBorder": "rgba(255,255,255,0.08)",
+
+  "bgImageJoin": "",
+  "bgImageWait": "",
+  "bgImagePlay": "",
+  "bgImageResult": "",
+  "bgImageProjector": "",
+
+  "lottieTimer": "/lottie/timer.json",
+  "lottieCorrect": "/lottie/correct.json",
+  "lottieIncorrect": "/lottie/incorrect.json",
+  "lottieCelebration": "/lottie/celebration.json",
+
+  "buttonPreset": "default"
+}

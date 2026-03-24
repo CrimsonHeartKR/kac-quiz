@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <rect width="400" height="400" rx="20" fill="#1a1a2e"/>
+  <path d="M100 240 A130 130 0 0 1 300 240 Z" fill="#16a34a"/>
+  <path d="M110 240 A120 120 0 0 1 290 240 Z" fill="#22c55e"/>
+  <path d="M120 240 A110 110 0 0 1 280 240 Z" fill="#ef4444"/>
+  <path d="M125 240 A105 105 0 0 1 275 240 Z" fill="#dc2626"/>
+  <circle cx="165" cy="210" r="5" fill="#1a1a2e"/>
+  <circle cx="200" cy="195" r="5" fill="#1a1a2e"/>
+  <circle cx="235" cy="210" r="5" fill="#1a1a2e"/>
+  <circle cx="180" cy="230" r="4" fill="#1a1a2e"/>
+  <circle cx="220" cy="230" r="4" fill="#1a1a2e"/>
+  <circle cx="200" cy="220" r="4" fill="#1a1a2e"/>
+  <text x="200" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="white">WATERMELON</text>
+</svg>

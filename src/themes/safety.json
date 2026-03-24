@@ -1,0 +1,44 @@
+{
+  "name": "안전교육 테마",
+  "primaryColor": "#B91C1C",
+  "accentColor": "#FACC15",
+  "bgColor": "#1A0A0A",
+  "bgSecondary": "#2D1111",
+  "logoUrl": "",
+  "eventName": "KAC 안전교육",
+  "fontTitle": "Bebas Neue",
+  "fontBody": "Pretendard",
+
+  "btnA": "#EF4444",
+  "btnB": "#2563EB",
+  "btnC": "#F59E0B",
+  "btnD": "#16A34A",
+
+  "timerSafe": "#16A34A",
+  "timerWarn": "#F59E0B",
+  "timerDanger": "#EF4444",
+
+  "correct": "#16A34A",
+  "incorrect": "#EF4444",
+
+  "medalGold": "#FACC15",
+  "medalSilver": "#A1A1AA",
+  "medalBronze": "#A16207",
+
+  "overlayColor": "rgba(26,10,10,0.70)",
+  "cardBg": "rgba(185,28,28,0.08)",
+  "cardBorder": "rgba(185,28,28,0.20)",
+
+  "bgImageJoin": "",
+  "bgImageWait": "",
+  "bgImagePlay": "",
+  "bgImageResult": "",
+  "bgImageProjector": "",
+
+  "lottieTimer": "",
+  "lottieCorrect": "",
+  "lottieIncorrect": "",
+  "lottieCelebration": "",
+
+  "buttonPreset": "default"
+}

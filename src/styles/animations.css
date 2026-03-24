@@ -1,0 +1,198 @@
+/* ══════════════════════════════════════════════════════════
+   KAC Quiz — Shared Animation Keyframes & Utility Classes
+   Consolidated from HostPlayPage, ProjectorPage, HostLobbyPage
+   ══════════════════════════════════════════════════════════ */
+
+/* ── Keyframes ── */
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUpLarge {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRightLarge {
+  from { opacity: 0; transform: translateX(120px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-80px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes scaleInLarge {
+  from { opacity: 0; transform: scale(0.5); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(16,185,129,0.4); }
+  50% { box-shadow: 0 0 0 8px rgba(16,185,129,0); }
+}
+
+@keyframes pulseSlow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+@keyframes barGrow {
+  from { width: 0; }
+}
+
+@keyframes feedSlideIn {
+  from { opacity: 0; transform: translateX(30px) scale(0.95); }
+  to { opacity: 1; transform: translateX(0) scale(1); }
+}
+
+@keyframes correctReveal {
+  0% { opacity: 0; transform: scale(0.5); }
+  50% { opacity: 1; transform: scale(1.1); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes rankSlideIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes countdownPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}
+
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(20px) scale(0.8); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes awardReveal {
+  0% { opacity: 0; transform: translateY(60px) scale(0.7); }
+  60% { opacity: 1; transform: translateY(-10px) scale(1.05); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes confettiFloat {
+  0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(-200px) rotate(720deg); opacity: 0; }
+}
+
+@keyframes starBurst {
+  0% { transform: scale(0) rotate(0deg); opacity: 1; }
+  50% { transform: scale(1.2) rotate(180deg); opacity: 0.8; }
+  100% { transform: scale(0) rotate(360deg); opacity: 0; }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes sparkle {
+  0%, 100% { opacity: 0; transform: scale(0) rotate(0deg); }
+  50% { opacity: 1; transform: scale(1) rotate(180deg); }
+}
+
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 0 20px rgba(255,215,0,0.3); }
+  50% { box-shadow: 0 0 60px rgba(255,215,0,0.6), 0 0 100px rgba(255,215,0,0.2); }
+}
+
+@keyframes overlayIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes checkmarkDraw {
+  0% { stroke-dashoffset: 60; opacity: 0; }
+  30% { opacity: 1; }
+  100% { stroke-dashoffset: 0; opacity: 1; }
+}
+
+@keyframes timerPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+@keyframes participantIn {
+  from { opacity: 0; transform: translateX(16px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* ── Host Play Utility Classes ── */
+
+.anim-fade-up { animation: fadeInUp 0.5s ease-out both; }
+.anim-slide-right { animation: slideInRight 0.4s ease-out both; }
+.anim-scale-in { animation: scaleIn 0.4s ease-out both; }
+.anim-bar-grow { animation: barGrow 0.7s ease-out both; }
+.anim-feed-in { animation: feedSlideIn 0.35s ease-out both; }
+.anim-correct-reveal { animation: correctReveal 0.5s cubic-bezier(0.34,1.56,0.64,1) both; }
+.anim-rank-in { animation: rankSlideIn 0.4s ease-out both; }
+.anim-countdown { animation: countdownPulse 1s ease-in-out infinite; }
+
+/* ── Projector Utility Classes ── */
+
+.animate-fade-in { animation: fadeIn 0.6s ease-out both; }
+.animate-fade-in-up { animation: fadeInUpLarge 0.7s ease-out both; }
+.animate-slide-in-right { animation: slideInRightLarge 0.6s ease-out both; }
+.animate-slide-in-left { animation: slideInLeft 0.5s ease-out both; }
+.animate-scale-in { animation: scaleInLarge 0.5s ease-out both; }
+.animate-pulse-slow { animation: pulseSlow 2s ease-in-out infinite; }
+.animate-award-reveal { animation: awardReveal 0.8s cubic-bezier(0.34,1.56,0.64,1) both; }
+.animate-glow-pulse { animation: glowPulse 2s ease-in-out infinite; }
+.animate-overlay-in { animation: overlayIn 0.5s ease-out both; }
+
+/* ── Lobby Utility Classes ── */
+
+.participant-card { animation: participantIn 0.4s ease-out both; }
+
+/* ── Accent Text (uses CSS variable --accent) ── */
+
+.accent-text {
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-cc, rgba(232,160,32,0.8)) 50%, var(--accent-99, rgba(232,160,32,0.6)) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Shimmer Text (uses CSS variable --medal-gold) ── */
+
+.shimmer-text {
+  background: linear-gradient(90deg, var(--medal-gold, #FFD700) 0%, #FFFACD 25%, var(--medal-gold, #FFD700) 50%, #FFFACD 75%, var(--medal-gold, #FFD700) 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 3s linear infinite;
+}
+
+/* ── Scrollbar Styles ── */
+
+.host-scrollbar::-webkit-scrollbar { width: 4px; }
+.host-scrollbar::-webkit-scrollbar-track { background: transparent; }
+.host-scrollbar::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.15); border-radius: 2px; }
+
+.custom-scrollbar::-webkit-scrollbar { width: 4px; }
+.custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+.custom-scrollbar::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.2); border-radius: 2px; }
+.custom-scrollbar::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.3); }

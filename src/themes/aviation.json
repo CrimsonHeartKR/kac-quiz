@@ -1,0 +1,44 @@
+{
+  "name": "항공 테마",
+  "primaryColor": "#1E40AF",
+  "accentColor": "#F5C842",
+  "bgColor": "#0A1628",
+  "bgSecondary": "#111D35",
+  "logoUrl": "",
+  "eventName": "KAC 항공교육",
+  "fontTitle": "Bebas Neue",
+  "fontBody": "Pretendard",
+
+  "btnA": "#DC2626",
+  "btnB": "#1D4ED8",
+  "btnC": "#D97706",
+  "btnD": "#059669",
+
+  "timerSafe": "#059669",
+  "timerWarn": "#D97706",
+  "timerDanger": "#DC2626",
+
+  "correct": "#059669",
+  "incorrect": "#DC2626",
+
+  "medalGold": "#F5C842",
+  "medalSilver": "#94A3B8",
+  "medalBronze": "#B45309",
+
+  "overlayColor": "rgba(10,22,40,0.70)",
+  "cardBg": "rgba(30,64,175,0.08)",
+  "cardBorder": "rgba(30,64,175,0.20)",
+
+  "bgImageJoin": "",
+  "bgImageWait": "",
+  "bgImagePlay": "",
+  "bgImageResult": "",
+  "bgImageProjector": "",
+
+  "lottieTimer": "",
+  "lottieCorrect": "",
+  "lottieIncorrect": "",
+  "lottieCelebration": "",
+
+  "buttonPreset": "default"
+}

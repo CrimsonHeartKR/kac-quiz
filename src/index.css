@@ -1,0 +1,55 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
+@import './styles/animations.css';
+@import './styles/design-system.css';
+@import "tailwindcss";
+
+:root {
+  /* Theme CSS variables — defaults match default.json */
+  --primary: #1A3A6B;
+  --accent: #E8A020;
+  --bg: #090D1A;
+  --bg-secondary: #0F1629;
+  --font-title: 'Bebas Neue';
+  --font-body: 'Pretendard';
+
+  /* Answer button colors */
+  --btn-a: #EF4444;
+  --btn-b: #3B82F6;
+  --btn-c: #F59E0B;
+  --btn-d: #10B981;
+
+  /* Timer colors */
+  --timer-safe: #10B981;
+  --timer-warn: #F59E0B;
+  --timer-danger: #EF4444;
+
+  /* Feedback colors */
+  --correct: #10B981;
+  --incorrect: #EF4444;
+
+  /* Medal colors */
+  --medal-gold: #FFD700;
+  --medal-silver: #C0C0C0;
+  --medal-bronze: #CD7F32;
+
+  /* UI layers */
+  --overlay: rgba(0,0,0,0.65);
+  --card-bg: rgba(255,255,255,0.05);
+  --card-border: rgba(255,255,255,0.08);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body), system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}
